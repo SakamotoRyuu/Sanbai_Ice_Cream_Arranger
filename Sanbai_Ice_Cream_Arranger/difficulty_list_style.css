@@ -1,0 +1,248 @@
+.sakamoto-parent {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: #fff;
+    container-type: inline-size;
+    pointer-events: none;
+}
+.sakamoto-lamp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    line-height: 1;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1cqw 1cqw #000, 0cqw 0cqw 3cqw #000;
+    font-weight: bold;
+    font-size: 19.5cqw;
+}
+.sakamoto-flare {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    line-height: 1;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1cqw 1cqw #000, 0cqw 0cqw 3cqw #000;
+    font-weight: bold;
+    font-size: 19.5cqw;
+}
+.sakamoto-score {
+    position: absolute;
+    bottom: -3.5cqw;
+    right: 0;
+    text-align: right;
+    line-height: 1;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1cqw 1cqw #000, 0cqw 0cqw 3cqw #000;
+    font-weight: bold;
+    font-size: 21cqw;
+}
+.sakamoto-difference {
+    position: absolute;
+    bottom: 15.5cqw;
+    right: 0;
+    text-align: right;
+    line-height: 1;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1cqw 1cqw #000, 0cqw 0cqw 3cqw #000;
+    font-weight: bold;
+    font-size: 21cqw;
+}
+.sakamoto-clear {color: #4ef;}
+.sakamoto-parent > .sakamoto-clear {font-size: 14.625cqw;}
+.sakamoto-life4 {color: #f66;}
+.sakamoto-parent > .sakamoto-life4 {font-size: 17.0625cqw;}
+.sakamoto-fc {color: #7df;}
+.sakamoto-gfc {color: #7fd;}
+.sakamoto-pfc {color: #fd7;}
+.sakamoto-sdp {color: #ffd;}
+.sakamoto-mfc {color: #fff;}
+.sakamoto-f1 {color: #77adff;}
+.sakamoto-f2 {color: #77e3ff;}
+.sakamoto-f3 {color: #77ff77;}
+.sakamoto-f4 {color: #ffe877;}
+.sakamoto-f5 {color: #ff7777;}
+.sakamoto-f6 {color: #ad77ff;}
+.sakamoto-f7 {color: #b3a8a8;}
+.sakamoto-f8 {color: #d8dce6;}
+.sakamoto-f9 {
+    color: #1a1a1a;
+    text-shadow: 1px 1px #fff, 0px 0px 3px #000;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    paint-order: stroke;
+}
+.sakamoto-parent > .sakamoto-f9 {
+    text-shadow: 1cqw 1cqw #fff, 0cqw 0cqw 3cqw #000;
+    -webkit-text-stroke: 2cqw #fff;
+    text-stroke: 2cqw #fff;
+    paint-order: stroke;
+}
+.sakamoto-fex {color: #fff;}
+.sakamoto-diffEqual {color: #fff;}
+.sakamoto-diffUp1 {color: #cfc;}
+.sakamoto-diffUp2 {color: #afa;}
+.sakamoto-diffUp3 {color: #8f8;}
+.sakamoto-diffUp4 {color: #6f6;}
+.sakamoto-diffUp5 {color: #4f4;}
+.sakamoto-diffDown1 {color: #fcc;}
+.sakamoto-diffDown2 {color: #faa;}
+.sakamoto-diffDown3 {color: #f88;}
+.sakamoto-diffDown4 {color: #f66;}
+.sakamoto-diffDown5 {color: #f44;}
+.sakamoto-mfc::before {
+    content:"MFC";
+    position: absolute;
+    inset-block-start: 0;
+    color: rgba(0, 0, 0, 0);
+    background: linear-gradient(90deg, #77f 0%, #f66 25%, #fd7 50%, #7fd 75%, #7df 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: none;
+}
+.sakamoto-fex::before {
+    content:"FEX";
+    position: absolute;
+    inset-block-start: 0;
+    color: rgba(0, 0, 0, 0);
+    background: linear-gradient(180deg, #77f 0%, #f66 25%, #fd7 50%, #7fd 75%, #7df 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: none;
+}
+
+@media only screen and (min-device-width: 901px) {
+    #no-rating-row > .td-jackets > #jackets-no-rating > .div-jacket > .img-jacket {height: 80px; width: 80px; margin: 8px;}
+    #no-rating-row > .td-jackets > #jackets-no-rating > .div-jacket > .div-dark {height: 88px; width: 88px; top: 8px; left: 8px;}
+}
+@media only screen and (max-device-width: 900px) {
+    #no-rating-row > .td-jackets > #jackets-no-rating > .div-jacket > .img-jacket {height: 160px; width: 160px;}
+    #no-rating-row > .td-jackets > #jackets-no-rating > .div-jacket > .div-dark {height: 168px; width: 168px; top: 8px; left: 8px;}
+}
+
+.sakamoto-average {
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+    line-height: 1;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 1px #000, 0px 0px 3px #000;
+}
+
+@media only screen and (min-device-width: 901px) {
+    .sakamoto-average {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-device-width: 900px) {
+    .sakamoto-average {    
+        font-size: 26px;
+    }
+}
+
+#song-score-time {
+    font-size: 33px;
+}
+
+.sakamoto-details {    
+    color: #fff;
+    line-height: 1.2;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 1px #000, 0 0 3px #000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.sakamoto-details summary {
+    font-size: 44px;
+    margin: 6px 12px;
+}
+
+.sakamoto-details > table {    
+    color: #fff;
+    line-height: 1;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 1px #000, 0 0 3px #000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.sakamoto-details td {
+    padding: 4px;
+    max-width: 340px;
+    height: 40px;
+    position: relative;
+}
+
+.sakamoto-details th {
+    margin: 4px;
+    background-color: #292a33;
+}
+
+.sakamoto-details tr:nth-child(odd) {
+    background-color: #17171c;
+}
+
+.sakamoto-details tr:nth-child(even) {
+    background-color: #292a33;
+}
+
+
+.sakamoto-details button {
+    width: 100%;
+    padding: 8px 2px;
+    box-sizing: border-box;
+    background-color: #222;
+    border: solid #ccc;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 1px 1px #000, 0 0 3px #000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.sakamoto-details button.button-highlight {    
+    background-color: #444;
+}
+
+.sakamoto-details .sakamoto-mfc::before {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 24px;
+}
+
+.sakamoto-details .sakamoto-fex::before {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 24px;
+}
+
+.sakamoto-difficulty-beginner {
+    color: #7df;
+}
+
+.sakamoto-difficulty-basic {
+    color: #fe7;
+}
+
+.sakamoto-difficulty-difficult {
+    color: #f77;
+}
+
+.sakamoto-difficulty-expert {
+    color: #7f7;
+}
+
+.sakamoto-difficulty-challenge {
+    color: #e777ff;
+}

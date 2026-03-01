@@ -1,0 +1,102 @@
+.ranking-stats-parent {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.ranking-stats {
+    background: #0008;
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 12px;
+    font-family: "Sawarabi Gothic", sans-serif;
+    text-shadow: 1px 1px #000, 0px 0px 3px #000;
+    line-height: 1.4;
+    border: 1px solid #222;
+    display: inline-block;
+}
+
+@media only screen and (min-device-width: 901px) {
+    .ranking-stats {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-device-width: 900px) {
+    .ranking-stats {    
+        font-size: 30px;
+    }
+}
+
+.ranking-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.sakamoto-difficulty-beginner {
+    color: #7df;
+}
+
+.sakamoto-difficulty-basic {
+    color: #fe7;
+}
+
+.sakamoto-difficulty-difficult {
+    color: #f77;
+}
+
+.sakamoto-difficulty-expert {
+    color: #7f7;
+}
+
+.sakamoto-difficulty-challenge {
+    color: #e777ff;
+}
+
+.ranking-tables {    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.ranking-tables table:nth-of-type(1) {
+    margin-right: 16px;
+}
+
+.ranking-tables tr {
+    position: relative;
+}
+
+.ranking-tables td {
+    padding: 0 8px;
+    text-align: right;
+}
+
+.ranking-tables td:nth-of-type(1) {
+    text-align: center;
+}
+
+.ranking-stats .ranking-grade {
+    font-weight: bold;
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+
+.sakamoto-clear {color: #4ef;}
+.sakamoto-life4 {color: #f66;}
+.sakamoto-fc {color: #7df;}
+.sakamoto-gfc {color: #7fd;}
+.sakamoto-pfc {color: #fd7;}
+.sakamoto-sdp {color: #ffd;}
+.sakamoto-mfc {color: #fff;}
+.sakamoto-mfc::before {
+    content:"MFC";
+    position: absolute;
+    inset-block-start: 0;
+    color: rgba(0, 0, 0, 0);
+    background: linear-gradient(90deg, #77f 0%, #f66 25%, #fd7 50%, #7fd 75%, #7df 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: none;
+}
+.sakamoto-aaa { color: #fd7;}
+.sakamoto-aa { color: #ddd;}
+.sakamoto-a { color: #f66;}

@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "三倍 Ice Cream Arranger",
+    "description": "アプリケーション名"
+  },
+  "appDesc": {
+    "message": "三倍IceCreamの難易度表・楽曲詳細ページに追加情報を表示する拡張機能です。個人情報の取得や外部通信は行いません。", 
+    "description": "アプリケーションの説明"
+  }
+}
