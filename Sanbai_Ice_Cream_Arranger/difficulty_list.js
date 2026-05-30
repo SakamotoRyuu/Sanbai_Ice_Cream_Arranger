@@ -5,6 +5,8 @@ const sortTypes = ['title', 'level', 'clear', 'flare', 'score', 'difference', 'z
 const tierMax = 20;
 let isDetailsOpened = false;
 let langIsJp = false;
+let isSortDesc = false;
+let previousSortType = '';
 
 function eventHandler() {
     document.removeEventListener("DOMContentLoaded", eventHandler);
@@ -642,6 +644,15 @@ function addScoreTable(sortType) {
             sortWithDate();
             break;
     }
+
+    // 前回と同じソートタイプなら逆順にする
+    if (sortType === previousSortType && !isSortDesc) {
+        filteredScores.reverse();
+        isSortDesc = true;
+    } else {
+        isSortDesc = false;
+    }
+    previousSortType = sortType;
 
     // 現在選択中のレベルを取得
     const selectLevelElem = document.getElementById("select-level");
